@@ -36,7 +36,7 @@ body:
     attributes:
       label: Vigil version
       description: Settings > About shows the version and the build.
-      placeholder: 0.1.0 (2)
+      placeholder: Version 0.0.0 (0)
     validations:
       required: true
   - type: input

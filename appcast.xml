@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss
+    version="2.0"
+    xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+>
+    <channel>
+        <title>Vigil Updates</title>
+        <link>https://latent-signal.github.io/vigil-releases/appcast.xml</link>
+        <description>Signed updates for Vigil.</description>
+        <language>en</language>
+
+        <!--
+        This appcast is intentionally empty until Vigil's first signed release.
+        The release runbook in the private source repository adds each item.
+        Never publish a placeholder enclosure URL, length, version, or
+        signature. Items carry no sparkle:releaseNotesLink: Sparkle would fetch
+        that URL, and Vigil makes no request beyond the appcast, the download,
+        and its license check.
+        -->
+    </channel>
+</rss>

@@ -1,0 +1,79 @@
+name: Bug report
+description: Report a problem with Vigil that you can reproduce
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Anyone can read what you write here.
+
+        Do not paste prompts, agent output, file or folder paths, project names, session IDs, email addresses, or license keys. Vigil sees what your coding agents do, so its developer log can hold private data. If `Capture raw hook payloads` was on in Settings > Advanced, the log holds full hook payloads with no redaction: prompt text, assistant messages, tool arguments and output, transcript paths, and, for Cursor, your email address.
+
+        Paste only the log lines that show the problem, and replace each private value with a placeholder such as `<path>` or `<session>`.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected Vigil to do instead.
+      placeholder: Vigil let this Mac sleep while Claude Code was still working.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that make the problem happen.
+      placeholder: |
+        1. Start a Codex session.
+        2. Wait for it to ask for approval.
+        3. Leave this Mac for 10 minutes.
+    validations:
+      required: true
+  - type: input
+    id: vigil-version
+    attributes:
+      label: Vigil version
+      description: Settings > About shows the version and the build.
+      placeholder: 0.1.0 (2)
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version and Mac
+      placeholder: macOS 15.6, MacBook Pro with Apple M3
+    validations:
+      required: true
+  - type: dropdown
+    id: agents
+    attributes:
+      label: Agents involved
+      multiple: true
+      options:
+        - Claude Code
+        - Codex
+        - Gemini CLI
+        - Cursor
+        - Copilot CLI
+        - pi
+        - OpenCode
+        - None or not sure
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Developer log lines (optional)
+      description: Review every line before you paste it. Remove prompts, paths, project names, session IDs, and any other private value.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have checked that this issue holds no prompts, paths, or other private agent data.
+          required: true

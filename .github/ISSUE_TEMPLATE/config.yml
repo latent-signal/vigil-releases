@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy
+    url: https://vigilmac.com/privacy
+    about: What Vigil discards, and the two network requests it makes.
+  - name: Website
+    url: https://vigilmac.com/
+    about: Download Vigil, buy a license, and read how it works.

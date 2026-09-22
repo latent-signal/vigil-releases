@@ -10,13 +10,17 @@
         <description>Signed updates for Vigil.</description>
         <language>en</language>
 
-        <!--
-        This appcast is intentionally empty until Vigil's first signed release.
-        The release runbook in the private source repository adds each item.
-        Never publish a placeholder enclosure URL, length, version, or
-        signature. Items carry no sparkle:releaseNotesLink: Sparkle would fetch
-        that URL, and Vigil makes no request beyond the appcast, the download,
-        and its license check.
-        -->
+        <item>
+            <title>0.0.1</title>
+            <pubDate>Tue, 22 Sep 2026 08:10:22 -0400</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/latent-signal/vigil-releases/releases/download/v0.0.1/Vigil.dmg"
+                length="3094404"
+                type="application/octet-stream"
+                sparkle:edSignature="GkFQuB9PpT4XtZyHM5/lymCwoE8FD2ndDmjXtUWh8hv2v9dR/CSJTjjhlUk267ZNIZ5xFlpzVaheOYkXWDnnDw=="/>
+        </item>
     </channel>
 </rss>

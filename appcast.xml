@@ -11,6 +11,19 @@
         <language>en</language>
 
         <item>
+            <title>0.1.0</title>
+            <pubDate>Fri, 09 Oct 2026 19:00:44 -0400</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/latent-signal/vigil-releases/releases/download/v0.1.0/Vigil.dmg"
+                length="3393971"
+                type="application/octet-stream"
+                sparkle:edSignature="bLKi+iL7F3kjZ6BFQKNJ2OKMX8JAGw1ysSb3SNfriOT4p58UgHn/kf7KJCGnH3spOQWOv66WGqpE0d4tXda1Dw=="/>
+        </item>
+
+        <item>
             <title>0.0.1</title>
             <pubDate>Tue, 22 Sep 2026 08:10:22 -0400</pubDate>
             <sparkle:version>1</sparkle:version>

@@ -1,3 +1,5 @@
+<img src="icon.png" width="128" height="128" alt="Vigil app icon">
+
 # Vigil
 
 Vigil is a macOS menu bar app that keeps your Mac awake while local coding agents work. It releases its idle-sleep assertion when the work stops, fails, or waits for your input longer than a grace period.
